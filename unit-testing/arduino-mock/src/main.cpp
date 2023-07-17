@@ -7,7 +7,7 @@
 #ifdef UNIT_TEST
     #include "ArduinoFake.h"
 #else
-    #include "Arduino.h"
+    #include <Arduino.h>
 #endif
 
 void setup()
