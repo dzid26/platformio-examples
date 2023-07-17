@@ -27,4 +27,4 @@ How to build PlatformIO based project
     > platformio test
 
     # Test specific environment
-    > platformio test -e nucleo_f401re
+    > platformio test -e nucleo_l452re

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "stm32l1xx_hal.h"
+#include "stm32l4xx_hal.h"
 
 extern void initialise_monitor_handles(void);
 

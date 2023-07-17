@@ -15,7 +15,7 @@
 **/
 
 #include "unity_config.h"
-#include "stm32f4xx_hal.h"
+#include "stm32l4xx_hal.h"
 
 #define USARTx                           USART2
 #define USARTx_CLK_ENABLE()              __HAL_RCC_USART2_CLK_ENABLE()
