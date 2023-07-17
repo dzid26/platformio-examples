@@ -17,8 +17,11 @@
 #include <stdio.h>
 #include "unity_config.h"
 
+extern void initialise_monitor_handles(void);
+
 void unityOutputStart()
 {
+    initialise_monitor_handles();
 }
 
 void unityOutputChar(char c)

@@ -17,8 +17,6 @@
 #include "stm32l4xx_hal.h"
 #include <unity.h>
 
-extern void initialise_monitor_handles(void);
-
 void setUp(void) {}
 void tearDown(void) {}
 
@@ -29,8 +27,6 @@ void test_dummy(void)
 
 int main()
 {
-    initialise_monitor_handles();
-
     UNITY_BEGIN();
     RUN_TEST(test_dummy);
     UNITY_END(); // stop unit testing
