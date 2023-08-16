@@ -3,7 +3,8 @@
 #include <inttypes.h>
 
 #include "main.h"
-#include "stm32l4xx_hal.h"
+#include "stm32f1xx_hal.h"
+// #include "stm32l4xx_hal.h"
 
 extern void initialise_monitor_handles(void);
 
@@ -49,14 +50,9 @@ static char* readLine(void) {
 }
 
 static char readCharacter(void){
-    char cha;
-    
-    int discardCha = 0;
+    char cha=0;
     // fflush(stdin);
-    while(scanf("%c", &cha) != 1){
-        // Discard extra characters in input buffer
-        clean_stdin();
-    }
+    scanf("%c", &cha) != 1;
     clean_stdin();
     return cha;
 }

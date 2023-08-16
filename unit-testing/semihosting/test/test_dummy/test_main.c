@@ -14,7 +14,7 @@
  limitations under the License.
 **/
 
-#include "stm32l4xx_hal.h"
+#include "stm32f1xx_hal.h"
 #include <unity.h>
 
 #include "main.h"
